@@ -46,9 +46,9 @@ sap.ui.define([
 		onPressCopyEIM: function(oEvent) {
 			var URL;
 			var EIM = this.getView().byId("EIM").getValue();
-			
+
 			/*MessageToast.show(sap.ui.Device.browser.name);*/
-			
+
 			if (EIM !== "") {
 
 				switch (sap.ui.Device.browser.name) {
@@ -77,9 +77,9 @@ sap.ui.define([
 		onPressCopyOTRS: function(oEvent) {
 			var URL;
 			var OTRS = this.getView().byId("OTRS").getValue();
-			
+
 			/*MessageToast.show(sap.ui.Device.browser.name);*/
-			
+
 			if (OTRS !== "") {
 
 				switch (sap.ui.Device.browser.name) {
@@ -105,11 +105,18 @@ sap.ui.define([
 			}
 
 		},
-		
-		onPressTileOTRSOwner: function(oEvent){
-				var URL = "http://otrs.msnet.railb.be/otrs/index.pl?Action=AgentTicketSearch;Subaction=Search;TakeLastSearch=1;SaveProfile=1;Profile=My%20Tickets%20%28Owner%29";
-				window.open(URL, '_blank');
-			
+
+		onPressTileOTRSOwner: function(oEvent) {
+			var URL =
+				"http://otrs.msnet.railb.be/otrs/index.pl?Action=AgentTicketSearch;Subaction=Search;TakeLastSearch=1;SaveProfile=1;Profile=My%20Tickets%20%28Owner%29";
+			window.open(URL, '_blank');
+
+		},
+		onPressTileOTRSCreator: function(oEvent) {
+			var URL =
+				"http://otrs.msnet.railb.be/otrs/index.pl?Action=AgentTicketSearch;Subaction=Search;TakeLastSearch=1;SaveProfile=1;Profile=My%20tickets%20%28Creator%29";
+			window.open(URL, '_blank');
+
 		}
 
 	});

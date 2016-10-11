@@ -38,6 +38,7 @@
 								<Panel headerText="{i18n>shortcutPantelTitle}" class="sapUiSmallMargin">
 									<content>
 										<StandardTile title="OTRS" icon="sap-icon://shortcut" type="Monitor" info="Owner" press="onPressTileOTRSOwner"></StandardTile>
+										<StandardTile title="OTRS" icon="sap-icon://shortcut" type="Monitor" info="Creator" press="onPressTileOTRSCreator"></StandardTile>
 									</content>
 								</Panel>
 							</IconTabFilter>
