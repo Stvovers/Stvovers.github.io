@@ -117,8 +117,12 @@ sap.ui.define([
 				"http://otrs.msnet.railb.be/otrs/index.pl?Action=AgentTicketSearch;Subaction=Search;TakeLastSearch=1;SaveProfile=1;Profile=My%20tickets%20%28Creator%29";
 			window.open(URL, '_blank');
 
-		}
-
+		},
+		onPressTileQC: function(oEvent) {
+			var URL =
+				"http://b-alm/qcbin/start_a.jsp";
+			window.open(URL, '_blank');
+}
 	});
 
 });
