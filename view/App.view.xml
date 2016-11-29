@@ -13,10 +13,18 @@
 											<Title level="H2" text="OTRS"/>
 										</Toolbar>
 									</headerToolbar>
-									<FlexBox alignItems="Start">
+									<FlexBox alignItems="Start" direction="Column">
 										<items>
-											<SearchField id="OTRS" placeholder="10000000" class="sapUiSmallMargin" search="onSearchOTRS"/>
-											<Button icon="sap-icon://copy" type="Emphasized"  class="sapUiSmallMargin" press="onPressCopyOTRS"/>
+											<Label text="Otrs"></Label>
+											<FlexBox alignItems="Start">
+												<SearchField id="OTRS" placeholder="10000000" class="sapUiSmallMargin" search="onSearchOTRS"/>
+												<Button icon="sap-icon://copy" type="Emphasized" class="sapUiSmallMargin" press="onPressCopyOTRS"/>
+											</FlexBox>
+											<Label text="Charm"></Label>
+											<FlexBox alignItems="Start">
+												<SearchField id="Charm" placeholder="8000012251" class="sapUiSmallMargin" search="onSearchCharm"/>
+												<Button icon="sap-icon://copy" type="Emphasized" class="sapUiSmallMargin" press="onPressCopyCharm"/>
+											</FlexBox>
 										</items>
 									</FlexBox>
 								</Panel>
@@ -29,7 +37,7 @@
 									<FlexBox alignItems="Start">
 										<items>
 											<SearchField id="EIM" placeholder="6812" class="sapUiSmallMargin" search="onSearchEIM"/>
-											<Button icon="sap-icon://copy" type="Emphasized"  class="sapUiSmallMargin" press="onPressCopyEIM"/>
+											<Button icon="sap-icon://copy" type="Emphasized" class="sapUiSmallMargin" press="onPressCopyEIM"/>
 										</items>
 									</FlexBox>
 								</Panel>
@@ -39,11 +47,11 @@
 									<content>
 										<StandardTile title="OTRS" icon="sap-icon://shortcut" type="Monitor" info="Owner" press="onPressTileOTRSOwner"></StandardTile>
 										<StandardTile title="OTRS" icon="sap-icon://shortcut" type="Monitor" info="Creator" press="onPressTileOTRSCreator"></StandardTile>
-											<StandardTile title="QC" icon="sap-icon://shortcut" type="Monitor" info="QC" press="onPressTileQC"></StandardTile>
+										<StandardTile title="QC" icon="sap-icon://shortcut" type="Monitor" info="QC" press="onPressTileQC"></StandardTile>
 									</content>
 								</Panel>
 							</IconTabFilter>
-<!--							<IconTabFilter icon="sap-icon://shortcut" text="Shortcuts">
+							<!--							<IconTabFilter icon="sap-icon://shortcut" text="Shortcuts">
 								<Panel headerText="{i18n>shortcutPantelTitle}" class="sapUiSmallMargin">
 									<content>
 										<FlexBox direction="Column" alignItems="Center" justifyContent="Start">
