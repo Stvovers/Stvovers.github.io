@@ -17,6 +17,18 @@ sap.ui.define([
 		}
 
 		,
+		onPressOTRSlink: function(oEvent) {
+			
+				var URL = "http://otrs.msnet.railb.be/";
+				window.open(URL, '_blank');
+			
+		},
+				onPressEIMlink: function(oEvent) {
+			
+				var URL = "http://eim.belgianrail.be/otcs01/llisapi.dll?func=ll&objId=2015178&objAction=browse&viewType=1#";
+				window.open(URL, '_blank');
+			
+		},
 
 		onSearchOTRS: function(oEvent) {
 
