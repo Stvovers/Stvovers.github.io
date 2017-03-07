@@ -11,11 +11,7 @@
 									<headerToolbar>
 										<Toolbar>
 											<Title level="H2" text="OTRS"/>
-<<<<<<< HEAD
-											<Button icon="sap-icon://shortcut"  press="onPressOTRSlink" ></Button>
-=======
-											<Button icon="sap-icon://shortcut"  press="onPressOTRSlink"></Button>
->>>>>>> branch 'master' of https://github.com/Stvovers/Stvovers.github.io.git
+											<Button icon="sap-icon://shortcut" press="onPressOTRSlink"></Button>
 										</Toolbar>
 									</headerToolbar>
 									<FlexBox alignItems="Start" direction="Column">
@@ -37,7 +33,7 @@
 									<headerToolbar>
 										<Toolbar>
 											<Title level="H2" text="EIM"/>
-											<Button icon="sap-icon://shortcut"  press="onPressEIMlink"></Button>
+											<Button icon="sap-icon://shortcut" press="onPressEIMlink"></Button>
 										</Toolbar>
 									</headerToolbar>
 									<FlexBox alignItems="Start">
