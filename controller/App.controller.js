@@ -176,6 +176,12 @@ sap.ui.define([
 			var URL =
 				"http://b-alm/qcbin/start_a.jsp";
 			window.open(URL, '_blank');
+},
+
+onLiveChange: function(oEvent){
+	var a = oEvent.getParameter("newValue");
+	// MessageToast.show(a);
+	
 }
 	});
 

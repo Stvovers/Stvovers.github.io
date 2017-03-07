@@ -11,14 +11,18 @@
 									<headerToolbar>
 										<Toolbar>
 											<Title level="H2" text="OTRS"/>
+<<<<<<< HEAD
+											<Button icon="sap-icon://shortcut"  press="onPressOTRSlink" ></Button>
+=======
 											<Button icon="sap-icon://shortcut"  press="onPressOTRSlink"></Button>
+>>>>>>> branch 'master' of https://github.com/Stvovers/Stvovers.github.io.git
 										</Toolbar>
 									</headerToolbar>
 									<FlexBox alignItems="Start" direction="Column">
 										<items>
 											<Label text="Otrs"></Label>
 											<FlexBox alignItems="Start">
-												<SearchField id="OTRS" placeholder="10000000" class="sapUiSmallMargin" search="onSearchOTRS"/>
+												<SearchField id="OTRS" placeholder="10000000" class="sapUiSmallMargin" search="onSearchOTRS" liveChange="onLiveChange"/>
 												<Button icon="sap-icon://copy" type="Emphasized" class="sapUiSmallMargin" press="onPressCopyOTRS"/>
 											</FlexBox>
 											<Label text="Charm"></Label>
