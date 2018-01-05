@@ -38,8 +38,22 @@
 									</headerToolbar>
 									<FlexBox alignItems="Start">
 										<items>
-											<SearchField id="EIM" placeholder="6812" class="sapUiSmallMargin" search="onSearchEIM"/>
+											<SearchField id="EIM" placeholder="6810" class="sapUiSmallMargin" search="onSearchEIM"/>
 											<Button icon="sap-icon://copy" type="Emphasized" class="sapUiSmallMargin" press="onPressCopyEIM"/>
+										</items>
+									</FlexBox>
+								</Panel>
+								<Panel>
+									<headerToolbar>
+										<Toolbar>
+											<Title level="H2" text="JIRA"/>
+											<Button icon="sap-icon://shortcut" press="onPressJIRAlink"></Button>
+										</Toolbar>
+									</headerToolbar>
+									<FlexBox alignItems="Start">
+										<items>
+											<SearchField id="JIRA" placeholder="410" class="sapUiSmallMargin" search="onSearchJIRA"/>
+											<Button icon="sap-icon://copy" type="Emphasized" class="sapUiSmallMargin" press="onPressCopyJIRA"/>
 										</items>
 									</FlexBox>
 								</Panel>

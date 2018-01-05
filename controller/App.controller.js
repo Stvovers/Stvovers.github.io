@@ -18,16 +18,22 @@ sap.ui.define([
 
 		,
 		onPressOTRSlink: function(oEvent) {
-			
-				var URL = "http://otrs.msnet.railb.be/";
-				window.open(URL, '_blank');
-			
+
+			var URL = "http://otrs.msnet.railb.be/";
+			window.open(URL, '_blank');
+
 		},
-				onPressEIMlink: function(oEvent) {
-			
-				var URL = "http://eim.belgianrail.be/otcs01/llisapi.dll?func=ll&objId=2015178&objAction=browse&viewType=1#";
-				window.open(URL, '_blank');
-			
+		onPressEIMlink: function(oEvent) {
+
+			var URL = "http://eim.belgianrail.be/otcs01/llisapi.dll?func=ll&objId=2015178&objAction=browse&viewType=1#";
+			window.open(URL, '_blank');
+
+		},
+		onPressJIRAlink: function(oEvent) {
+
+			var URL = "http://jira.intern-belgianrail.be/projects/BTCM/summary";
+			window.open(URL, '_blank');
+
 		},
 
 		onSearchOTRS: function(oEvent) {
@@ -61,7 +67,21 @@ sap.ui.define([
 
 			if (oEvent.getParameter("clearButtonPressed") == false) {
 				var Charm = oEvent.getParameter("query");
-				var URL = "http://sapxbp.msnet.railb.be:8102/sap/bc/bsp/sap/crm_ui_start/default.htm?crm-object-type=AIC_OB_CMCD&crm-object-action=B&crm-object-keyname=OBJECT_ID&crm-object-value=" + Charm;
+				var URL =
+					"http://sapxbp.msnet.railb.be:8102/sap/bc/bsp/sap/crm_ui_start/default.htm?crm-object-type=AIC_OB_CMCD&crm-object-action=B&crm-object-keyname=OBJECT_ID&crm-object-value=" +
+					Charm;
+				window.open(URL, '_blank');
+
+			}
+			//alert("Search triggered: " + oEvent.getParameter("query"));
+		},
+		onSearchJIRA: function(oEvent) {
+
+			//alert("Search triggered: " + oEvent.getParameter("clearButtonPressed"));
+
+			if (oEvent.getParameter("clearButtonPressed") == false) {
+				var JIRA = oEvent.getParameter("query");
+				var URL = "http://jira.intern-belgianrail.be/browse/BTCM-" + JIRA;
 				window.open(URL, '_blank');
 
 			}
@@ -129,7 +149,7 @@ sap.ui.define([
 			}
 
 		},
-			onPressCopyCharm: function(oEvent) {
+		onPressCopyCharm: function(oEvent) {
 			var URL;
 			var Charm = this.getView().byId("Charm").getValue();
 
@@ -140,7 +160,9 @@ sap.ui.define([
 				switch (sap.ui.Device.browser.name) {
 
 					case "cr":
-						URL = "http://sapxbp.msnet.railb.be:8102/sap/bc/bsp/sap/crm_ui_start/default.htm?crm-object-type=AIC_OB_CMCD&crm-object-action=B&crm-object-keyname=OBJECT_ID&crm-object-value=" + Charm;
+						URL =
+							"http://sapxbp.msnet.railb.be:8102/sap/bc/bsp/sap/crm_ui_start/default.htm?crm-object-type=AIC_OB_CMCD&crm-object-action=B&crm-object-keyname=OBJECT_ID&crm-object-value=" +
+							Charm;
 						var input = document.createElement('textarea');
 						document.body.appendChild(input);
 						input.value = (URL);
@@ -151,10 +173,47 @@ sap.ui.define([
 						MessageToast.show("Charm Link copied to clipboard!");
 						break;
 					case "ie":
-						URL = "http://sapxbp.msnet.railb.be:8102/sap/bc/bsp/sap/crm_ui_start/default.htm?crm-object-type=AIC_OB_CMCD&crm-object-action=B&crm-object-keyname=OBJECT_ID&crm-object-value=" + Charm;
+						URL =
+							"http://sapxbp.msnet.railb.be:8102/sap/bc/bsp/sap/crm_ui_start/default.htm?crm-object-type=AIC_OB_CMCD&crm-object-action=B&crm-object-keyname=OBJECT_ID&crm-object-value=" +
+							Charm;
 						/*MessageToast.show(source);*/
 						window.clipboardData.setData('text', URL);
 						MessageToast.show("Charm Link copied to clipboard!");
+
+				}
+			}
+
+		},
+		onPressCopyJIRA: function(oEvent) {
+			var URL;
+			var JIRA = this.getView().byId("JIRA").getValue();
+
+			/*MessageToast.show(sap.ui.Device.browser.name);*/
+
+			if (JIRA !== "") {
+
+				switch (sap.ui.Device.browser.name) {
+
+					case "cr":
+						URL =
+							"http://jira.intern-belgianrail.be/browse/BTCM-" +
+							JIRA;
+						var input = document.createElement('textarea');
+						document.body.appendChild(input);
+						input.value = (URL);
+						input.focus();
+						input.select();
+						document.execCommand('Copy');
+						input.remove();
+						MessageToast.show("JIRA Link copied to clipboard!");
+						break;
+					case "ie":
+						URL =
+							"http://jira.intern-belgianrail.be/browse/BTCM-" +
+							JIRA;
+						/*MessageToast.show(source);*/
+						window.clipboardData.setData('text', URL);
+						MessageToast.show("JIRA Link copied to clipboard!");
 
 				}
 			}
@@ -176,13 +235,13 @@ sap.ui.define([
 			var URL =
 				"http://b-alm/qcbin/start_a.jsp";
 			window.open(URL, '_blank');
-},
+		},
 
-onLiveChange: function(oEvent){
-	var a = oEvent.getParameter("newValue");
-	// MessageToast.show(a);
-	
-}
+		onLiveChange: function(oEvent) {
+			var a = oEvent.getParameter("newValue");
+			// MessageToast.show(a);
+
+		}
 	});
 
 });
