@@ -58,7 +58,7 @@
 									</FlexBox>
 								</Panel>
 							</IconTabFilter>
-							<IconTabFilter icon="sap-icon://shortcut" text="Shortcuts">
+							<IconTabFilter icon="sap-icon://shortcut" text="Shortcuts" visible="false">
 								<Panel headerText="{i18n>shortcutPantelTitle}" class="sapUiSmallMargin">
 									<content>
 										<StandardTile title="OTRS" icon="sap-icon://shortcut" type="Monitor" info="Owner" press="onPressTileOTRSOwner"></StandardTile>
@@ -67,13 +67,14 @@
 									</content>
 								</Panel>
 							</IconTabFilter>
-							<IconTabFilter icon="sap-icon://shortcut" text="B-TC Mobile">
+							<IconTabFilter icon="sap-icon://iphone" text="B-TC Mobile">
 								<l:VerticalLayout id="containerLayout" width="100%">
 									<l:BlockLayout id="BlockLayout" background="Dashboard">
 										<l:BlockLayoutRow accentCells="Accent1">
 											<l:BlockLayoutCell id="Accent1" width="2" title="DEV">
 												<l:VerticalLayout>
 													<Link emphasized="true" text="Chronos" target="_blank" href="https://zopschronos-a1638e048.dispatcher.hana.ondemand.com/"></Link>
+													<Link emphasized="true" text="Chronos Kiosk" target="_blank" href="http://sapgb12.belgianrail.be:8045/sap/bc/ui5_ui5/sap/zopschronos/index.html?sap-client=100&sap-ui-language=EN&sap-ui-xx-devmode=true"></Link>
 													<Link emphasized="true" text="Notifs" target="_blank" href="https://zopsnotif-a1638e048.dispatcher.hana.ondemand.com/"></Link>
 													<Link emphasized="true" text="After" target="_blank" href="https://zopsafter-a1638e048.dispatcher.hana.ondemand.com/"></Link>
 													<Link emphasized="true" text="Matcon" target="_blank" href="https://zopsmatconapp-a1638e048.dispatcher.hana.ondemand.com/"></Link>
