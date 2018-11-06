@@ -67,6 +67,27 @@
 									</content>
 								</Panel>
 							</IconTabFilter>
+							<IconTabFilter icon="sap-icon://shortcut" text="B-TC Mobile">
+								<l:VerticalLayout id="containerLayout" width="100%">
+									<l:BlockLayout id="BlockLayout" background="Dashboard">
+										<l:BlockLayoutRow accentCells="Accent1">
+											<l:BlockLayoutCell id="Accent1" width="2" title="DEV">
+												<l:VerticalLayout>
+													<Link emphasized="true" text="Chronos" target="_blank" href="https://zopschronos-a1638e048.dispatcher.hana.ondemand.com/"></Link>
+													<Link emphasized="true" text="Notifs" target="_blank" href="https://zopsnotif-a1638e048.dispatcher.hana.ondemand.com/"></Link>
+													<Link emphasized="true" text="After" target="_blank" href="https://zopsafter-a1638e048.dispatcher.hana.ondemand.com/"></Link>
+													<Link emphasized="true" text="Matcon" target="_blank" href="https://zopsmatconapp-a1638e048.dispatcher.hana.ondemand.com/"></Link>
+													<Link emphasized="true" text="Tags" target="_blank" href="https://nfcmanagement-a1638e048.dispatcher.hana.ondemand.com/"></Link>
+													<Link emphasized="true" text="User" target="_blank" href="https://userparameters-a1638e048.dispatcher.hana.ondemand.com/"></Link>
+												</l:VerticalLayout>
+											</l:BlockLayoutCell>
+											<l:BlockLayoutCell id="Accent2" width="2" title="ACC"></l:BlockLayoutCell>
+											<l:BlockLayoutCell id="Accent3" width="2" title="TRA"></l:BlockLayoutCell>
+											<l:BlockLayoutCell id="Accent4" width="2" title="PROD"></l:BlockLayoutCell>
+										</l:BlockLayoutRow>
+									</l:BlockLayout>
+								</l:VerticalLayout>
+							</IconTabFilter>
 							<!--							<IconTabFilter icon="sap-icon://shortcut" text="Shortcuts">
 								<Panel headerText="{i18n>shortcutPantelTitle}" class="sapUiSmallMargin">
 									<content>
