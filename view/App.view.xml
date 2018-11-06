@@ -58,15 +58,15 @@
 									</FlexBox>
 								</Panel>
 							</IconTabFilter>
-							<IconTabFilter icon="sap-icon://shortcut" text="Shortcuts" visible="false">
-								<Panel headerText="{i18n>shortcutPantelTitle}" class="sapUiSmallMargin">
-									<content>
-										<StandardTile title="OTRS" icon="sap-icon://shortcut" type="Monitor" info="Owner" press="onPressTileOTRSOwner"></StandardTile>
-										<StandardTile title="OTRS" icon="sap-icon://shortcut" type="Monitor" info="Creator" press="onPressTileOTRSCreator"></StandardTile>
-										<StandardTile title="QC" icon="sap-icon://shortcut" type="Monitor" info="QC" press="onPressTileQC"></StandardTile>
-									</content>
-								</Panel>
-							</IconTabFilter>
+							<!--<IconTabFilter icon="sap-icon://shortcut" text="Shortcuts" visible="false">-->
+							<!--	<Panel headerText="{i18n>shortcutPantelTitle}" class="sapUiSmallMargin">-->
+							<!--		<content>-->
+							<!--			<StandardTile title="OTRS" icon="sap-icon://shortcut" type="Monitor" info="Owner" press="onPressTileOTRSOwner"></StandardTile>-->
+							<!--			<StandardTile title="OTRS" icon="sap-icon://shortcut" type="Monitor" info="Creator" press="onPressTileOTRSCreator"></StandardTile>-->
+							<!--			<StandardTile title="QC" icon="sap-icon://shortcut" type="Monitor" info="QC" press="onPressTileQC"></StandardTile>-->
+							<!--		</content>-->
+							<!--	</Panel>-->
+							<!--</IconTabFilter>-->
 							<IconTabFilter icon="sap-icon://iphone" text="B-TC Mobile">
 								<l:VerticalLayout id="containerLayout" width="100%">
 									<l:BlockLayout id="BlockLayout" background="Dashboard">
@@ -74,7 +74,8 @@
 											<l:BlockLayoutCell id="Accent1" width="2" title="DEV">
 												<l:VerticalLayout>
 													<Link emphasized="true" text="Chronos" target="_blank" href="https://zopschronos-a1638e048.dispatcher.hana.ondemand.com/"></Link>
-													<Link emphasized="true" text="Chronos Kiosk" target="_blank" href="http://sapgb12.belgianrail.be:8045/sap/bc/ui5_ui5/sap/zopschronos/index.html?sap-client=100&sap-ui-language=EN&sap-ui-xx-devmode=true"></Link>
+													<Link emphasized="true" text="Chronos Kiosk" target="_blank"
+														href="http://sapgb12.belgianrail.be:8045/sap/bc/ui5_ui5/sap/zopschronos/index.html"></Link>
 													<Link emphasized="true" text="Notifs" target="_blank" href="https://zopsnotif-a1638e048.dispatcher.hana.ondemand.com/"></Link>
 													<Link emphasized="true" text="After" target="_blank" href="https://zopsafter-a1638e048.dispatcher.hana.ondemand.com/"></Link>
 													<Link emphasized="true" text="Matcon" target="_blank" href="https://zopsmatconapp-a1638e048.dispatcher.hana.ondemand.com/"></Link>
@@ -89,26 +90,6 @@
 									</l:BlockLayout>
 								</l:VerticalLayout>
 							</IconTabFilter>
-							<!--							<IconTabFilter icon="sap-icon://shortcut" text="Shortcuts">
-								<Panel headerText="{i18n>shortcutPantelTitle}" class="sapUiSmallMargin">
-									<content>
-										<FlexBox direction="Column" alignItems="Center" justifyContent="Start">
-											<items>
-												<FlexBox alignItems="Center" justifyContent="Start">
-													<items>
-														<Button text="1" type="Emphasized" class="sapUiSmallMarginEnd"/>
-														<Button text="2" type="Reject" class="sapUiSmallMarginEnd"/>
-														<Button text="3" type="Accept" class="sapUiSmallMarginEnd"/>
-													</items>
-												</FlexBox>
-												<Button text="1" type="Emphasized" class="sapUiSmallMarginEnd"/>
-												<Button text="2" type="Reject" class="sapUiSmallMarginEnd"/>
-												<Button text="3" type="Accept" class="sapUiSmallMarginEnd"/>
-											</items>
-										</FlexBox>
-									</content>
-								</Panel>
-							</IconTabFilter>-->
 						</items>
 					</IconTabBar>
 				</content>
