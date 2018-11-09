@@ -69,7 +69,7 @@
 							<!--</IconTabFilter>-->
 							<IconTabFilter icon="sap-icon://iphone" text="B-TC Mobile">
 								<l:VerticalLayout id="containerLayout" width="100%">
-									<l:BlockLayout id="BlockLayout" background="Dashboard">
+									<l:BlockLayout id="BlockLayout" background="Light">
 										<l:BlockLayoutRow accentCells="Accent1">
 											<l:BlockLayoutCell id="Accent1" width="2" title="DEV">
 												<l:VerticalLayout>
@@ -86,7 +86,8 @@
 											<l:BlockLayoutCell id="Accent2" width="2" title="ACC">
 												<l:VerticalLayout>
 													<Link emphasized="true" text="Chronos" target="_blank" href="https://chronos-a383728ba.dispatcher.hana.ondemand.com/"></Link>
-													<Link emphasized="true" text="Chronos Kiosk" target="_blank" href="http://sapgb51.belgianrail.be:8045/sap/bc/ui5_ui5/sap/zopschronos/index.html"></Link>
+													<Link emphasized="true" text="Chronos Kiosk" target="_blank"
+														href="http://sapgb51.belgianrail.be:8045/sap/bc/ui5_ui5/sap/zopschronos/index.html"></Link>
 													<Link emphasized="true" text="Notifs" target="_blank" href="https://notifs-a383728ba.dispatcher.hana.ondemand.com/"></Link>
 													<Link emphasized="true" text="After" target="_blank" href="https://after-a383728ba.dispatcher.hana.ondemand.com/"></Link>
 													<Link emphasized="true" text="Matcon" target="_blank" href="https://zopsmatconapp-a383728ba.dispatcher.hana.ondemand.com/"></Link>
@@ -97,7 +98,8 @@
 											<l:BlockLayoutCell id="Accent3" width="2" title="TRA">
 												<l:VerticalLayout>
 													<Link emphasized="true" text="Chronos" target="_blank" href="https://chronos-a949a1e8e.dispatcher.hana.ondemand.com/"></Link>
-													<Link emphasized="true" text="Chronos Kiosk" target="_blank" href="http://sapgb72.belgianrail.be:8045/sap/bc/ui5_ui5/sap/zopschronos/index.html"></Link>
+													<Link emphasized="true" text="Chronos Kiosk" target="_blank"
+														href="http://sapgb72.belgianrail.be:8045/sap/bc/ui5_ui5/sap/zopschronos/index.html"></Link>
 													<Link emphasized="true" text="Notifs" target="_blank" href="https://notif-a949a1e8e.dispatcher.hana.ondemand.com/"></Link>
 													<Link emphasized="true" text="After" target="_blank" href="https://after-a949a1e8e.dispatcher.hana.ondemand.com/"></Link>
 													<Link emphasized="true" text="Matcon" target="_blank" href="https://zopsmatconapp-a949a1e8e.dispatcher.hana.ondemand.com/"></Link>
@@ -108,7 +110,8 @@
 											<l:BlockLayoutCell id="Accent4" width="2" title="PROD">
 												<l:VerticalLayout>
 													<Link emphasized="true" text="Chronos" target="_blank" href="https://chronos-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
-													<Link emphasized="true" text="Chronos Kiosk" target="_blank" href="http://sapgb91.belgianrail.be:8045/sap/bc/ui5_ui5/sap/zopschronos/index.html"></Link>
+													<Link emphasized="true" text="Chronos Kiosk" target="_blank"
+														href="http://sapgb91.belgianrail.be:8045/sap/bc/ui5_ui5/sap/zopschronos/index.html"></Link>
 													<Link emphasized="true" text="Notifs" target="_blank" href="https://notifs-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
 													<Link emphasized="true" text="After" target="_blank" href="https://after-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
 													<Link emphasized="true" text="Matcon" target="_blank" href="https://zopsmatconapp-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
@@ -117,6 +120,32 @@
 												</l:VerticalLayout>
 											</l:BlockLayoutCell>
 										</l:BlockLayoutRow>
+										<l:BlockLayoutRow accentCells="Accent1">
+											<l:BlockLayoutCell title="Development Tools">
+												<l:HorizontalLayout >
+													<l:VerticalLayout class="sapUiLargeMarginEnd">
+														<Link emphasized="true" text="SAP Fiori Mobile - DEV" target="_blank" href="https://a1638e048-portal.sapmobilesecure.com/"></Link>
+														<Link emphasized="true" text="SAP Fiori Mobile - ACC" target="_blank" href="https://a383728ba-portal.sapmobilesecure.com/"></Link>
+														<Link emphasized="true" text="SAP Fiori Mobile - TRA" target="_blank" href="https://a949a1e8e-portal.sapmobilesecure.com/"></Link>
+														<Link emphasized="true" text="SAP Fiori Mobile - PROD" target="_blank" href="https://a50d43cc0-portal.sapmobilesecure.com/"></Link>
+													</l:VerticalLayout>
+													<l:VerticalLayout >
+														<Link emphasized="true" text="SAP CP" target="_blank"
+															href="https://account.hana.ondemand.com/cockpit#/organization/CA12551643IO0240127071/overview"></Link>
+														<Link emphasized="true" text="Web IDE" target="_blank" href="https://webidecp-p1297710935trial.dispatcher.hanatrial.ondemand.com/"></Link>
+														<Link emphasized="true" text="Bitbucket" target="_blank" href="https://bitbucket.intern-belgianrail.be/projects/SAP"></Link>
+													</l:VerticalLayout>
+												</l:HorizontalLayout>
+											</l:BlockLayoutCell>
+											<l:BlockLayoutCell title="Logging">
+												<l:VerticalLayout>
+													<Link emphasized="true" text="Odata Provisioning" target="_blank" href="https://gwaas-a50d43cc0.hana.ondemand.com/Admin"></Link>
+													<Link emphasized="true" text="Seclogs" target="_blank" href="https://seclogs.intern-belgianrail.be/"></Link>
+													<Link emphasized="true" text="SAP CP Status Page" target="_blank" href="https://sapcp.statuspage.io/"></Link>
+												</l:VerticalLayout>
+											</l:BlockLayoutCell>
+										</l:BlockLayoutRow>
+										<l:BlockLayoutRow accentCells="Accent1"></l:BlockLayoutRow>
 									</l:BlockLayout>
 								</l:VerticalLayout>
 							</IconTabFilter>
