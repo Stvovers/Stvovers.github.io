@@ -132,7 +132,7 @@
 													<l:VerticalLayout >
 														<Link emphasized="true" text="SAP CP" target="_blank"
 															href="https://account.hana.ondemand.com/cockpit#/organization/CA12551643IO0240127071/overview"></Link>
-														<Link emphasized="true" text="Web IDE" target="_blank" href="https://webidecp-p1297710935trial.dispatcher.hanatrial.ondemand.com/"></Link>
+														<Link emphasized="true" text="Web IDE" target="_blank" href="https://webidecp-a1638e048.dispatcher.hana.ondemand.com/"></Link>
 														<Link emphasized="true" text="Bitbucket" target="_blank" href="https://bitbucket.intern-belgianrail.be/projects/SAP"></Link>
 													</l:VerticalLayout>
 												</l:HorizontalLayout>
