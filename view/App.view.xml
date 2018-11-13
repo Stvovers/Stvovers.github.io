@@ -1,5 +1,12 @@
-<mvc:View xmlns:l="sap.ui.layout" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" controllerName="sap.ui.demo.wt.controller.App"
-	displayBlock="true">
+<mvc:View xmlns:l="sap.ui.layout" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="sap.ui.demo.wt.controller.App" displayBlock="true">
+	<html:style>
+		.whiteText:visited { color: #fafafa; } .imageChronos {background-image: url(img/chronos.png); background-repeat:no-repeat;
+		background-position: right; background-size:contain; } .imageNotifs{background-image: url(img/Notifs.png); background-repeat:no-repeat;
+		background-position: right; background-size:contain; } .imageAfter{background-image: url(img/After.png); background-repeat:no-repeat;
+		background-position: right; background-size:contain; } .imageTags{background-image: url(img/Tags.png); background-repeat:no-repeat;
+		background-position: right; background-size:contain; }
+	</html:style>
 	<App>
 		<pages>
 			<Page title="{i18n>homePageTitle}">
@@ -67,7 +74,7 @@
 							<!--		</content>-->
 							<!--	</Panel>-->
 							<!--</IconTabFilter>-->
-							<IconTabFilter icon="sap-icon://iphone" text="B-TC Mobile">
+							<IconTabFilter icon="sap-icon://iphone" text="B-TC M Test">
 								<l:VerticalLayout id="containerLayout" width="100%">
 									<l:BlockLayout id="BlockLayout" background="Light">
 										<l:BlockLayoutRow accentCells="Accent1">
@@ -146,6 +153,146 @@
 											</l:BlockLayoutCell>
 										</l:BlockLayoutRow>
 										<l:BlockLayoutRow accentCells="Accent1"></l:BlockLayoutRow>
+									</l:BlockLayout>
+								</l:VerticalLayout>
+							</IconTabFilter>
+							<IconTabFilter icon="sap-icon://iphone" text="B-TC M Apps">
+								<l:VerticalLayout width="100%">
+									<l:BlockLayout>
+										<l:BlockLayoutRow >
+											<!--backgroundColorSet="ColorSet6" backgroundColorShade="ShadeB"-->
+											<!--<l:BlockLayoutCell width="2" title="Chronos" >-->
+											<!--<l:HorizontalLayout >-->
+											<!--<Image src="img/chronos.png" width="10%"  ></Image>-->
+											<!--	<l:HorizontalLayout>-->
+											<!--		<l:VerticalLayout class="sapUiLargeMarginEnd">-->
+											<!--<Title text="Application"></Title>-->
+											<!--													<FormattedText htmlText="&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Dev&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Acc&lt;/a&gt;&lt;/li&gt;-->
+											<!--&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Tra&lt;/a&gt;&lt;/li&gt;-->
+											<!--&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Prod&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"></FormattedText>-->
+											<!--			<Link class="whiteText" emphasized="true" text="Dev" target="_blank" href="https://zopschronos-a1638e048.dispatcher.hana.ondemand.com/"></Link>-->
+											<!--			<Link emphasized="true" text="Acc" target="_blank" href="https://chronos-a383728ba.dispatcher.hana.ondemand.com/"></Link>-->
+											<!--			<Link emphasized="true" text="Tra" target="_blank" href="https://chronos-a949a1e8e.dispatcher.hana.ondemand.com/"></Link>-->
+											<!--			<Link emphasized="true" text="Prod" target="_blank" href="https://chronos-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>-->
+											<!--		</l:VerticalLayout>-->
+											<!--		<l:VerticalLayout>-->
+											<!--<Title text="EIM"></Title>-->
+											<!--			<Link emphasized="true" text="FSP E6974" target="_blank" href="http://eim.belgianrail.be/otcs01/llisapi.dll/open/FSP6974"></Link>-->
+											<!--		</l:VerticalLayout>-->
+											<!--	</l:HorizontalLayout>-->
+											<!--</l:BlockLayoutCell>-->
+											<!--class="imageChronos"-->
+											<l:BlockLayoutCell title="Chronos" backgroundColorSet="ColorSet11" backgroundColorShade="ShadeA">
+												<l:HorizontalLayout>
+													<l:VerticalLayout class="sapUiLargeMarginEnd">
+														<!--<Title text="Application"></Title>-->
+														<!--													<FormattedText htmlText="&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Dev&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Acc&lt;/a&gt;&lt;/li&gt;-->
+														<!--&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Tra&lt;/a&gt;&lt;/li&gt;-->
+														<!--&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Prod&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"></FormattedText>-->
+														<Link emphasized="true" text="Dev" target="_blank" href="https://zopschronos-a1638e048.dispatcher.hana.ondemand.com/"></Link>
+														<Link emphasized="true" text="Acc" target="_blank" href="https://chronos-a383728ba.dispatcher.hana.ondemand.com/"></Link>
+														<Link emphasized="true" text="Tra" target="_blank" href="https://chronos-a949a1e8e.dispatcher.hana.ondemand.com/"></Link>
+														<Link class="sapUiSmallMarginBottom" emphasized="true" text="Prod" target="_blank"
+															href="https://chronos-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
+														<Link emphasized="true" text="FSP E6974" target="_blank" href="http://eim.belgianrail.be/otcs01/llisapi.dll/open/FSP6974"></Link>
+													</l:VerticalLayout>
+													<Image src="img/Picture1.png"></Image>
+												</l:HorizontalLayout>
+											</l:BlockLayoutCell>
+											<!--backgroundColorSet="ColorSet11" backgroundColorShade="ShadeB"-->
+											<!--class="imageNotifs-->
+											<l:BlockLayoutCell title="Notifs" backgroundColorSet="ColorSet11" backgroundColorShade="ShadeB">
+												<!--<l:HorizontalLayout >-->
+												<!--<Image src="img/chronos.png" width="10%"  ></Image>-->
+												<l:HorizontalLayout>
+													<l:HorizontalLayout>
+														<l:VerticalLayout class="sapUiLargeMarginEnd">
+															<!--<Title text="Application"></Title>-->
+															<!--													<FormattedText htmlText="&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Dev&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Acc&lt;/a&gt;&lt;/li&gt;-->
+															<!--&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Tra&lt;/a&gt;&lt;/li&gt;-->
+															<!--&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Prod&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"></FormattedText>-->
+															<Link emphasized="true" text="Dev" target="_blank" href="https://zopsnotif-a1638e048.dispatcher.hana.ondemand.com/"></Link>
+															<Link emphasized="true" text="Acc" target="_blank" href="https://notifs-a383728ba.dispatcher.hana.ondemand.com/"></Link>
+															<Link emphasized="true" text="Tra" target="_blank" href="https://notif-a949a1e8e.dispatcher.hana.ondemand.com/"></Link>
+															<Link class="sapUiSmallMarginBottom" emphasized="true" text="Prod" target="_blank"
+																href="https://notifs-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
+															<!--<Title text="EIM"></Title>-->
+															<Link emphasized="true" text="FSP E6928" target="_blank" href="http://eim.belgianrail.be/otcs01/llisapi.dll/open/FSP6928"></Link>
+														</l:VerticalLayout>
+														<Image src="img/Picture2.png"></Image>
+													</l:HorizontalLayout>
+												</l:HorizontalLayout>
+											</l:BlockLayoutCell>
+											<!--class="imageAfter"-->
+											<l:BlockLayoutCell title="After" backgroundColorSet="ColorSet11" backgroundColorShade="ShadeC">
+												<!--<l:HorizontalLayout >-->
+												<!--<Image src="img/chronos.png" width="10%"  ></Image>-->
+												<l:HorizontalLayout>
+													<l:VerticalLayout class="sapUiLargeMarginEnd">
+														<!--<Title text="Application"></Title>-->
+														<!--													<FormattedText htmlText="&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Dev&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Acc&lt;/a&gt;&lt;/li&gt;-->
+														<!--&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Tra&lt;/a&gt;&lt;/li&gt;-->
+														<!--&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Prod&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"></FormattedText>-->
+														<Link emphasized="true" text="Dev" target="_blank" href="https://zopsafter-a1638e048.dispatcher.hana.ondemand.com/"></Link>
+														<Link emphasized="true" text="Acc" target="_blank" href="https://after-a383728ba.dispatcher.hana.ondemand.com/"></Link>
+														<Link emphasized="true" text="Tra" target="_blank" href="https://after-a949a1e8e.dispatcher.hana.ondemand.com/"></Link>
+														<Link class="sapUiSmallMarginBottom" emphasized="true" text="Prod" target="_blank"
+															href="https://after-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
+														<!--<Title text="EIM"></Title>-->
+														<Link emphasized="true" text="FSP E7154" target="_blank" href="http://eim.belgianrail.be/otcs01/llisapi.dll/open/FSP7154"></Link>
+													</l:VerticalLayout>
+													<Image src="img/Picture3.png"></Image>
+												</l:HorizontalLayout>
+											</l:BlockLayoutCell>
+											<!--class="imageTags" -->
+											<l:BlockLayoutCell title="Tags" backgroundColorSet="ColorSet11" backgroundColorShade="ShadeD">
+												<!--<l:HorizontalLayout >-->
+												<!--<Image src="img/chronos.png" width="10%"  ></Image>-->
+												<l:HorizontalLayout>
+													<l:VerticalLayout class="sapUiLargeMarginEnd">
+														<!--<Title text="Application"></Title>-->
+														<!--													<FormattedText htmlText="&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Dev&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Acc&lt;/a&gt;&lt;/li&gt;-->
+														<!--&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Tra&lt;/a&gt;&lt;/li&gt;-->
+														<!--&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold&quot;&gt;Prod&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"></FormattedText>-->
+														<Link emphasized="true" text="Dev" target="_blank" href="https://nfcmanagement-a1638e048.dispatcher.hana.ondemand.com/"></Link>
+														<Link emphasized="true" text="Acc" target="_blank" href="https://tags-a383728ba.dispatcher.hana.ondemand.com/"></Link>
+														<Link emphasized="true" text="Tra" target="_blank" href="https://tags-a949a1e8e.dispatcher.hana.ondemand.com/"></Link>
+														<Link class="sapUiSmallMarginBottom" emphasized="true" text="Prod" target="_blank"
+															href="https://tags-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
+														<!--<Title text="EIM"></Title>-->
+														<Link emphasized="true" text="FSP E6950" target="_blank" href="http://eim.belgianrail.be/otcs01/llisapi.dll/open/FSP6950"></Link>
+													</l:VerticalLayout>
+													<Image src="img/Picture4.png"></Image>
+												</l:HorizontalLayout>
+											</l:BlockLayoutCell>
+										</l:BlockLayoutRow>
+										<l:BlockLayoutRow>
+											<l:BlockLayoutCell title="User" backgroundColorSet="ColorSet11" backgroundColorShade="ShadeD">
+												<l:HorizontalLayout>
+													<l:VerticalLayout class="sapUiLargeMarginEnd">
+														<Link emphasized="true" text="Dev" target="_blank" href="https://userparameters-a1638e048.dispatcher.hana.ondemand.com/"></Link>
+														<Link emphasized="true" text="Acc" target="_blank" href="https://user-a383728ba.dispatcher.hana.ondemand.com/"></Link>
+														<Link emphasized="true" text="Tra" target="_blank" href="https://user-a949a1e8e.dispatcher.hana.ondemand.com/"></Link>
+														<Link class="sapUiSmallMarginBottom" emphasized="true" text="Prod" target="_blank" href="https://user-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
+														<Link emphasized="true" text="FSP 7162" target="_blank" href="http://eim.belgianrail.be/otcs01/llisapi.dll/open/FSP7162"></Link>
+													</l:VerticalLayout>
+													<Image src="img/user.png"></Image>
+												</l:HorizontalLayout>
+											</l:BlockLayoutCell>
+											<l:BlockLayoutCell title="Matcon" backgroundColorSet="ColorSet11" backgroundColorShade="ShadeC">
+												<l:HorizontalLayout>
+													<l:VerticalLayout class="sapUiLargeMarginEnd">
+														<Link emphasized="true" text="Dev" target="_blank" href="https://zopsmatconapp-a1638e048.dispatcher.hana.ondemand.com/"></Link>
+														<Link emphasized="true" text="Acc" target="_blank" href="https://zopsmatconapp-a383728ba.dispatcher.hana.ondemand.com/"></Link>
+														<Link emphasized="true" text="Tra" target="_blank" href="https://zopsmatconapp-a949a1e8e.dispatcher.hana.ondemand.com/"></Link>
+														<Link class="sapUiSmallMarginBottom" emphasized="true" text="Prod" target="_blank" href="https://zopsmatconapp-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
+														<Link emphasized="true" text="FSP 7177" target="_blank" href="http://eim.belgianrail.be/otcs01/llisapi.dll/open/FSP7177"></Link>
+													</l:VerticalLayout>
+													<Image src="img/matcon.png"></Image>
+												</l:HorizontalLayout>
+											</l:BlockLayoutCell>
+											<l:BlockLayoutCell title="Area51" backgroundColorSet="ColorSet11" backgroundColorShade="ShadeB"></l:BlockLayoutCell>
+										</l:BlockLayoutRow>
 									</l:BlockLayout>
 								</l:VerticalLayout>
 							</IconTabFilter>
