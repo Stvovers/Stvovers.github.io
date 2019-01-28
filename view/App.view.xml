@@ -149,6 +149,8 @@
 													<Link emphasized="true" text="Odata Provisioning" target="_blank" href="https://gwaas-a50d43cc0.hana.ondemand.com/Admin"></Link>
 													<Link emphasized="true" text="Seclogs" target="_blank" href="https://seclogs.intern-belgianrail.be/"></Link>
 													<Link emphasized="true" text="Axway - WS " target="_blank" href="https://ws-analytics.intern-belgianrail.be/"></Link>
+													<Link emphasized="true" text="PIWIK" target="_blank" href="http://piwik.intern-belgianrail.be"></Link>
+													<Link emphasized="true" text="Azure" target="_blank" href="https://portal.azure.com"></Link>
 													<Link emphasized="true" text="SAP CP Status Page" target="_blank" href="https://sapcp.statuspage.io/"></Link>
 												</l:VerticalLayout>
 											</l:BlockLayoutCell>
