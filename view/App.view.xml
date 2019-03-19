@@ -141,6 +141,7 @@
 															href="https://account.hana.ondemand.com/cockpit#/organization/CA12551643IO0240127071/overview"></Link>
 														<Link emphasized="true" text="Web IDE" target="_blank" href="https://webidecp-a1638e048.dispatcher.hana.ondemand.com/"></Link>
 														<Link emphasized="true" text="Bitbucket" target="_blank" href="https://bitbucket.intern-belgianrail.be/projects/SAP"></Link>
+														<Link emphasized="true" text="SAPUI5 versions" target="_blank" href="https://sapui5.hana.ondemand.com/versionoverview.html"></Link>
 													</l:VerticalLayout>
 												</l:HorizontalLayout>
 											</l:BlockLayoutCell>
