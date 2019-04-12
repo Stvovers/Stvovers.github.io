@@ -74,8 +74,14 @@
 							<!--		</content>-->
 							<!--	</Panel>-->
 							<!--</IconTabFilter>-->
-							<IconTabFilter icon="sap-icon://iphone" text="B-TC M Test">
-								<l:VerticalLayout id="containerLayout" width="100%">
+							<IconTabFilter icon="sap-icon://iphone" text="B-TC Mobile">
+								<SegmentedButton selectedKey="Testing" selectionChange="onSelectionChangeView">
+									<items>
+										<SegmentedButtonItem text="Testing" key="testing"/>
+										<SegmentedButtonItem text="App" key="app"/>
+									</items>
+								</SegmentedButton>
+								<l:VerticalLayout id="containerLayout" width="100%" visible="{appViewModel>/viewTesting}">
 									<l:BlockLayout id="BlockLayout" background="Light">
 										<l:BlockLayoutRow accentCells="Accent1">
 											<l:BlockLayoutCell id="Accent1" width="2" title="DEV">
@@ -150,19 +156,20 @@
 													<Link emphasized="true" text="Odata Provisioning" target="_blank" href="https://gwaas-a50d43cc0.hana.ondemand.com/Admin"></Link>
 													<Link emphasized="true" text="Seclogs" target="_blank" href="https://seclogs.intern-belgianrail.be/"></Link>
 													<Link emphasized="true" text="Axway - WS " target="_blank" href="https://ws-analytics.intern-belgianrail.be/"></Link>
-													<Link emphasized="true" text="PIWIK" target="_blank" href="http://piwik.intern-belgianrail.be"></Link>
-													<Link emphasized="true" text="PIWIK ACC" target="_blank" href="http://piwik.acc-intern-belgianrail.be"></Link>
 													<Link emphasized="true" text="Azure" target="_blank" href="https://portal.azure.com"></Link>
 													<Link emphasized="true" text="SAP CP Status Page" target="_blank" href="https://sapcp.statuspage.io/"></Link>
+													<Link emphasized="true" text="PIWIK DEV" target="_blank" href="http://piwik.dev-intern-belgianrail.be"></Link>
+													<Link emphasized="true" text="PIWIK ACC" target="_blank" href="http://piwik.acc-intern-belgianrail.be"></Link>
+													<Link emphasized="true" text="PIWIK PROD" target="_blank" href="http://piwik.intern-belgianrail.be"></Link>
 												</l:VerticalLayout>
 											</l:BlockLayoutCell>
 										</l:BlockLayoutRow>
 										<l:BlockLayoutRow accentCells="Accent1"></l:BlockLayoutRow>
 									</l:BlockLayout>
 								</l:VerticalLayout>
-							</IconTabFilter>
-							<IconTabFilter icon="sap-icon://iphone" text="B-TC M Apps">
-								<l:VerticalLayout width="100%">
+								<!--</IconTabFilter>-->
+								<!--<IconTabFilter icon="sap-icon://iphone" text="B-TC M Apps">-->
+								<l:VerticalLayout width="100%" visible="{= !${appViewModel>/viewTesting}}">
 									<l:BlockLayout>
 										<l:BlockLayoutRow >
 											<!--backgroundColorSet="ColorSet6" backgroundColorShade="ShadeB"-->
@@ -278,7 +285,8 @@
 														<Link emphasized="true" text="Dev" target="_blank" href="https://userparameters-a1638e048.dispatcher.hana.ondemand.com/"></Link>
 														<Link emphasized="true" text="Acc" target="_blank" href="https://user-a383728ba.dispatcher.hana.ondemand.com/"></Link>
 														<Link emphasized="true" text="Tra" target="_blank" href="https://user-a949a1e8e.dispatcher.hana.ondemand.com/"></Link>
-														<Link class="sapUiSmallMarginBottom" emphasized="true" text="Prod" target="_blank" href="https://user-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
+														<Link class="sapUiSmallMarginBottom" emphasized="true" text="Prod" target="_blank"
+															href="https://user-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
 														<Link emphasized="true" text="FSP 7162" target="_blank" href="http://eim.belgianrail.be/otcs01/llisapi.dll/open/FSP7162"></Link>
 													</l:VerticalLayout>
 													<Image src="img/user.png"></Image>
@@ -290,7 +298,8 @@
 														<Link emphasized="true" text="Dev" target="_blank" href="https://zopsmatconapp-a1638e048.dispatcher.hana.ondemand.com/"></Link>
 														<Link emphasized="true" text="Acc" target="_blank" href="https://zopsmatconapp-a383728ba.dispatcher.hana.ondemand.com/"></Link>
 														<Link emphasized="true" text="Tra" target="_blank" href="https://zopsmatconapp-a949a1e8e.dispatcher.hana.ondemand.com/"></Link>
-														<Link class="sapUiSmallMarginBottom" emphasized="true" text="Prod" target="_blank" href="https://zopsmatconapp-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
+														<Link class="sapUiSmallMarginBottom" emphasized="true" text="Prod" target="_blank"
+															href="https://zopsmatconapp-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
 														<Link emphasized="true" text="FSP 7177" target="_blank" href="http://eim.belgianrail.be/otcs01/llisapi.dll/open/FSP7177"></Link>
 													</l:VerticalLayout>
 													<Image src="img/matcon.png"></Image>
@@ -301,6 +310,7 @@
 									</l:BlockLayout>
 								</l:VerticalLayout>
 							</IconTabFilter>
+							<!--</IconTabFilter>-->
 						</items>
 					</IconTabBar>
 				</content>
