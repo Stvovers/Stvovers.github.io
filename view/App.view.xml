@@ -75,12 +75,16 @@
 							<!--	</Panel>-->
 							<!--</IconTabFilter>-->
 							<IconTabFilter icon="sap-icon://iphone" text="B-TC Mobile">
-								<SegmentedButton selectedKey="Testing" selectionChange="onSelectionChangeView">
+								<FlexBox alignItems="Center" justifyContent="Center" renderType="Bare">
 									<items>
-										<SegmentedButtonItem text="Testing" key="testing"/>
-										<SegmentedButtonItem text="App" key="app"/>
+										<SegmentedButton selectedKey="Testing" selectionChange="onSelectionChangeView">
+											<items>
+												<SegmentedButtonItem text="Testing" key="testing"/>
+												<SegmentedButtonItem text="App" key="app"/>
+											</items>
+										</SegmentedButton>
 									</items>
-								</SegmentedButton>
+								</FlexBox>
 								<l:VerticalLayout id="containerLayout" width="100%" visible="{appViewModel>/viewTesting}">
 									<l:BlockLayout id="BlockLayout" background="Light">
 										<l:BlockLayoutRow accentCells="Accent1">
