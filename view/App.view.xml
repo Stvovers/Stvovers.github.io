@@ -211,6 +211,8 @@
 														<Link class="sapUiSmallMarginBottom" emphasized="true" text="Prod" target="_blank"
 															href="https://chronos-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
 														<Link emphasized="true" text="FSP E6974" target="_blank" href="http://eim.belgianrail.be/otcs01/llisapi.dll/open/FSP6974"></Link>
+														<Link emphasized="true" text="Metadata" target="_blank"
+															href="https://chronos-a50d43cc0.dispatcher.hana.ondemand.com/odata/sap/ZPM_CHRONOS_E6974_SRV/$metadata"></Link>
 													</l:VerticalLayout>
 													<Image src="img/Picture1.png"></Image>
 												</l:HorizontalLayout>
@@ -234,6 +236,8 @@
 																href="https://notifs-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
 															<!--<Title text="EIM"></Title>-->
 															<Link emphasized="true" text="FSP E6928" target="_blank" href="http://eim.belgianrail.be/otcs01/llisapi.dll/open/FSP6928"></Link>
+															<Link emphasized="true" text="Metadata" target="_blank"
+																href="https://notifs-a50d43cc0.dispatcher.hana.ondemand.com/odata/sap/Z6928_SRV/$metadata"></Link>
 														</l:VerticalLayout>
 														<Image src="img/Picture2.png"></Image>
 													</l:HorizontalLayout>
@@ -256,6 +260,8 @@
 															href="https://after-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
 														<!--<Title text="EIM"></Title>-->
 														<Link emphasized="true" text="FSP E7154" target="_blank" href="http://eim.belgianrail.be/otcs01/llisapi.dll/open/FSP7154"></Link>
+														<Link emphasized="true" text="Metadata" target="_blank"
+															href="https://after-a50d43cc0.dispatcher.hana.ondemand.com/odata/sap/ZPM_DEPANNAGE_E7154_SRV/$metadata"></Link>
 													</l:VerticalLayout>
 													<Image src="img/Picture3.png"></Image>
 												</l:HorizontalLayout>
@@ -277,6 +283,8 @@
 															href="https://tags-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
 														<!--<Title text="EIM"></Title>-->
 														<Link emphasized="true" text="FSP E6950" target="_blank" href="http://eim.belgianrail.be/otcs01/llisapi.dll/open/FSP6950"></Link>
+														<Link emphasized="true" text="Metadata" target="_blank"
+															href="https://tags-a50d43cc0.dispatcher.hana.ondemand.com/odata/sap/ZPM_TAG_MGMT_E6950_SRV/$metadata"></Link>
 													</l:VerticalLayout>
 													<Image src="img/Picture4.png"></Image>
 												</l:HorizontalLayout>
@@ -292,6 +300,8 @@
 														<Link class="sapUiSmallMarginBottom" emphasized="true" text="Prod" target="_blank"
 															href="https://user-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
 														<Link emphasized="true" text="FSP 7162" target="_blank" href="http://eim.belgianrail.be/otcs01/llisapi.dll/open/FSP7162"></Link>
+														<Link emphasized="true" text="Metadata" target="_blank"
+															href="https://user-a50d43cc0.dispatcher.hana.ondemand.com/odata/sap/ZCA_USER_PARAMETERS_E7162_SRV/$metadata"></Link>
 													</l:VerticalLayout>
 													<Image src="img/user.png"></Image>
 												</l:HorizontalLayout>
@@ -305,6 +315,8 @@
 														<Link class="sapUiSmallMarginBottom" emphasized="true" text="Prod" target="_blank"
 															href="https://zopsmatconapp-a50d43cc0.dispatcher.hana.ondemand.com/"></Link>
 														<Link emphasized="true" text="FSP 7177" target="_blank" href="http://eim.belgianrail.be/otcs01/llisapi.dll/open/FSP7177"></Link>
+														<Link emphasized="true" text="Metadata" target="_blank"
+															href="https://zopsmatconapp-a50d43cc0.dispatcher.hana.ondemand.com/odata/sap/ZPM_MATCON_SRV/$metadata"></Link>
 													</l:VerticalLayout>
 													<Image src="img/matcon.png"></Image>
 												</l:HorizontalLayout>
