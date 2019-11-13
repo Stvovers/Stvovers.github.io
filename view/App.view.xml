@@ -162,6 +162,11 @@
 													<Link emphasized="true" text="Axway - WS " target="_blank" href="https://ws-analytics.intern-belgianrail.be/"></Link>
 													<Link emphasized="true" text="Azure" target="_blank" href="https://portal.azure.com"></Link>
 													<Link emphasized="true" text="SAP CP Status Page" target="_blank" href="https://sapcp.statuspage.io/"></Link>
+												</l:VerticalLayout>
+											</l:BlockLayoutCell>
+											<l:BlockLayoutCell title="Reporting">
+												<l:VerticalLayout>
+													<Link emphasized="true" text="BI Report" target="_blank" href="http://sapbop.belgianrail.be:8080/BOE/BILaunchpad"></Link>
 													<Link emphasized="true" text="PIWIK DEV" target="_blank" href="http://piwik.dev-intern-belgianrail.be"></Link>
 													<Link emphasized="true" text="PIWIK ACC" target="_blank" href="http://piwik.acc-intern-belgianrail.be"></Link>
 													<Link emphasized="true" text="PIWIK PROD" target="_blank" href="http://piwik.intern-belgianrail.be"></Link>
