@@ -10,10 +10,10 @@ sap.ui.define([
 		onInit: function () {
 			// set data model on view
 			var oData = {
-				viewTesting: true 
+				viewTesting: true
 			};
 			var oModel = new JSONModel(oData);
-			this.getView().setModel(oModel,"appViewModel");
+			this.getView().setModel(oModel, "appViewModel");
 		},
 
 		onShowHello: function () {
@@ -85,6 +85,21 @@ sap.ui.define([
 			}
 			//alert("Search triggered: " + oEvent.getParameter("query"));
 		},
+		onSearchService: function (oEvent) {
+
+			//alert("Search triggered: " + oEvent.getParameter("clearButtonPressed"));
+
+			if (oEvent.getParameter("clearButtonPressed") == false) {
+				var Charm = oEvent.getParameter("query");
+				var URL =
+					"https://nmbssncbprod.service-now.com/text_search_exact_match.do?sysparm_search=" +
+					Charm;
+				window.open(URL, '_blank');
+
+			}
+			//alert("Search triggered: " + oEvent.getParameter("query"));
+		},
+
 		onSearchJIRA: function (oEvent) {
 
 			//alert("Search triggered: " + oEvent.getParameter("clearButtonPressed"));
@@ -194,6 +209,41 @@ sap.ui.define([
 			}
 
 		},
+		onPressCopyService: function (oEvent) {
+			var URL;
+			var Charm = this.getView().byId("serviceNow").getValue();
+
+			/*MessageToast.show(sap.ui.Device.browser.name);*/
+
+			if (Charm !== "") {
+
+				switch (sap.ui.Device.browser.name) {
+
+				case "cr":
+					URL =
+						"https://nmbssncbprod.service-now.com/text_search_exact_match.do?sysparm_search=" +
+						Charm;
+					var input = document.createElement('textarea');
+					document.body.appendChild(input);
+					input.value = (URL);
+					input.focus();
+					input.select();
+					document.execCommand('Copy');
+					input.remove();
+					MessageToast.show("Charm Link copied to clipboard!");
+					break;
+				case "ie":
+					URL =
+						"https://nmbssncbprod.service-now.com/text_search_exact_match.do?sysparm_search=" +
+						Charm;
+					/*MessageToast.show(source);*/
+					window.clipboardData.setData('text', URL);
+					MessageToast.show("Service Now Link copied to clipboard!");
+
+				}
+			}
+
+		},
 		onPressCopyJIRA: function (oEvent) {
 			var URL;
 			var JIRA = this.getView().byId("JIRA").getValue();
@@ -253,17 +303,17 @@ sap.ui.define([
 
 		},
 
-			onSelectionChangeView: function (oEvent) {
+		onSelectionChangeView: function (oEvent) {
 
 			var selectedKey = oEvent.getParameter("item").getKey();
 
 			switch (selectedKey) {
 			case "testing":
-					this.getView().getModel("appViewModel").setProperty("/viewTesting", true);
+				this.getView().getModel("appViewModel").setProperty("/viewTesting", true);
 				break;
 
 			case "app":
-					this.getView().getModel("appViewModel").setProperty("/viewTesting", false);
+				this.getView().getModel("appViewModel").setProperty("/viewTesting", false);
 				break;
 			default:
 			}

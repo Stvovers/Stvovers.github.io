@@ -17,24 +17,58 @@
 								<Panel>
 									<headerToolbar>
 										<Toolbar>
-											<Title level="H2" text="OTRS"/>
-											<Button icon="sap-icon://shortcut" press="onPressOTRSlink"></Button>
+											<Title level="H2" text="Ticketing"/>
+											<!--<Button icon="sap-icon://shortcut" press="onPressOTRSlink"></Button>-->
+											<!--<Title level="H2" text="Service Now"/>-->
+											<!--<Button icon="sap-icon://shortcut" press="onPressOTRSlink"></Button>-->
 										</Toolbar>
 									</headerToolbar>
-									<FlexBox alignItems="Start" direction="Column">
+									<VBox alignItems="Start">
 										<items>
-											<Label text="Otrs"></Label>
-											<FlexBox alignItems="Start">
-												<SearchField id="OTRS" placeholder="10000000" class="sapUiSmallMargin" search="onSearchOTRS" liveChange="onLiveChange"/>
-												<Button icon="sap-icon://copy" type="Emphasized" class="sapUiSmallMargin" press="onPressCopyOTRS"/>
-											</FlexBox>
-											<Label text="Charm"></Label>
-											<FlexBox alignItems="Start">
+											<HBox alignItems="Center">
+												<!--<Label text="Otrs" width="75px" wrapping="true"></Label>-->
+												<Link text="OTRS" width="75px" href="http://otrs.msnet.railb.be/otrs/index.pl?" target="_blank"></Link>
+												<HBox>
+													<SearchField id="OTRS" placeholder="10000000" class="sapUiSmallMargin" search="onSearchOTRS" liveChange="onLiveChange"></SearchField>
+													<Button icon="sap-icon://copy" type="Emphasized" class="sapUiSmallMargin" press="onPressCopyOTRS"></Button>
+												</HBox>
+											</HBox>
+											<HBox alignItems="Center">
+												<!--<Label text="Charm" width="75px" wrapping="true"></Label>-->
+												<Link text="Charm" width="75px"
+													href="http://sapxbp.msnet.railb.be:8102/sap(bD1lbiZjPTAwMSZkPW1pbg==)/bc/bsp/sap/crm_ui_start/default.htm" target="_blank"></Link>
 												<SearchField id="Charm" placeholder="8000012251" class="sapUiSmallMargin" search="onSearchCharm"/>
 												<Button icon="sap-icon://copy" type="Emphasized" class="sapUiSmallMargin" press="onPressCopyCharm"/>
-											</FlexBox>
+											</HBox>
+											<HBox alignItems="Center">
+												<!--<Label text="Service now" width="75px" wrapping="true"></Label>-->
+												<Link text="Service now" width="75px" href="https://nmbssncbprod.service-now.com" target="_blank"></Link>
+												<SearchField id="serviceNow" placeholder="INC0073488" class="sapUiSmallMargin" search="onSearchService"/>
+												<Button icon="sap-icon://copy" type="Emphasized" class="sapUiSmallMargin" press="onPressCopyService"/>
+											</HBox>
 										</items>
-									</FlexBox>
+									</VBox>
+									<!--<HBox>-->
+									<!--	<VBox justifyContent="SpaceBetween">-->
+									<!--		<Label text="Otrs" wrapping="true"></Label>-->
+									<!--		<Label text="Charm" wrapping="true"></Label>-->
+									<!--		<Label text="Service now" wrapping="true"></Label>-->
+									<!--	</VBox>-->
+									<!--	<VBox justifyContent="SpaceBetween">-->
+									<!--		<HBox>-->
+									<!--			<SearchField id="OTRS2" placeholder="10000000" class="sapUiSmallMargin" search="onSearchOTRS" liveChange="onLiveChange"></SearchField>-->
+									<!--			<Button icon="sap-icon://copy" type="Emphasized" class="sapUiSmallMargin" press="onPressCopyOTRS"></Button>-->
+									<!--		</HBox>-->
+									<!--		<HBox>-->
+									<!--			<SearchField id="OTRS3" placeholder="10000000" class="sapUiSmallMargin" search="onSearchOTRS" liveChange="onLiveChange"></SearchField>-->
+									<!--			<Button icon="sap-icon://copy" type="Emphasized" class="sapUiSmallMargin" press="onPressCopyOTRS"></Button>-->
+									<!--		</HBox>-->
+									<!--		<HBox>-->
+									<!--			<SearchField id="OTRS4" placeholder="10000000" class="sapUiSmallMargin" search="onSearchOTRS" liveChange="onLiveChange"></SearchField>-->
+									<!--			<Button icon="sap-icon://copy" type="Emphasized" class="sapUiSmallMargin" press="onPressCopyOTRS"></Button>-->
+									<!--		</HBox>-->
+									<!--	</VBox>-->
+									<!--</HBox>-->
 								</Panel>
 								<Panel>
 									<headerToolbar>
